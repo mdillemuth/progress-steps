@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Matt Dillemuth" />
+    <meta
+      name="description"
+      content="a simple web demonstration of a component that dynamically displays progress steps that could be used in a web project, such as an online store or form."
+      <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Progress Steps</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="progress-num active">1</div>
+        <div class="progress-num">2</div>
+        <div class="progress-num">3</div>
+        <div class="progress-num">4</div>
+        <div class="progress-num">5</div>
+      </div>
+
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next">Next</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
