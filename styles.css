@@ -2,7 +2,8 @@
 
 /* ===== CUSTOM PROPERTIES ===== */
 :root {
-  --line-border-fill: #3498db;
+  --primary-color: #026aa7;
+  --success-color: #28a745;
   --line-border-empty: #e0e0e0;
 }
 
@@ -47,6 +48,14 @@ body {
   width: 350px;
 }
 
+.msg {
+  display: none;
+}
+
+.msg.completed {
+  display: block;
+}
+
 /* ===== PROGRESS BAR ===== */
 .progress-container::before {
   content: '';
@@ -61,7 +70,7 @@ body {
 }
 
 .progress-bar {
-  background-color: var(--line-border-fill);
+  background-color: var(--primary-color);
   position: absolute;
   top: 50%;
   height: 4px;
@@ -71,7 +80,11 @@ body {
   transition: 0.4s ease;
 }
 
-.progress-num {
+.progress-bar.completed {
+  background-color: var(--success-color);
+}
+
+.progress-step {
   background-color: #fff;
   color: #999;
   border-radius: 50%;
@@ -81,16 +94,23 @@ body {
   align-items: center;
   justify-content: center;
   border: 3px solid var(--line-border-empty);
-  transition: 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.progress-num:active {
-  border-color: var(--line-border-fill);
+.progress-step.active {
+  color: var(--primary-color);
+  font-weight: bold;
+  border-color: var(--primary-color);
+}
+
+.progress-step.completed {
+  color: var(--success-color);
+  border-color: var(--success-color);
 }
 
 /* ===== BUTTONS ===== */
 .btn {
-  background-color: var(--line-border-fill);
+  background-color: var(--primary-color);
   color: #fff;
   margin: 5px;
   padding: 8px 30px;

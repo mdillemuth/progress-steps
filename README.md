@@ -4,9 +4,9 @@ Project 2 of 50 from Brad Traversy's "50 Projects in 50 Days" course on Udemy.
 
 Interact with the project yourself by [viewing the live demonstration online!](https://mdillemuth.github.io/progress-steps/)
 
-## Screenshot
+## Demo
 
-![screenshot](screenshot.png)
+![demo](demo.gif)
 
 ## Description
 
@@ -18,16 +18,20 @@ A simple way to improve your user's experience (UX) is to keep them engaged with
 
 ## Technology
 
-- Semantic HTML5
-- CSS3
-- Vanilla JavaScript
+- HTML
+  - Semantic HTML5
+  - Accessibilty compliant
+- CSS
+  - Flexbox
+  - Media Queries
+- JavaScript
+  - ES6 Syntax
 
 ## Modifications from the Original
 
-- Refactored CSS using a mobile-first approach
-- Add auto-prefixing to CSS for compatability
-- Refactored JS to use ES6 arrow-function syntax
-- Replace divs with semantic HTML5 tags where appropriate
+- Add CSS rules to change UI color when all tasks are completed
+- Darken color to meet Lighthouse Accessibility checker for contrast
+- Implement semantic HTML tags
 
 ## Credit
 
